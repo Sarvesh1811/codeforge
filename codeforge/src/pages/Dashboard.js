@@ -8,7 +8,7 @@ function Dashboard() {
     const fetchHistory = async () => {
       const token = localStorage.getItem("token");
 
-      const res = await fetch("http://localhost:5000/history", {
+      const res = await fetch("https://codeforge-backend-rdxj.onrender.com/history", {
         headers: { Authorization: token },
       });
 

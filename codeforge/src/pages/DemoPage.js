@@ -18,7 +18,7 @@ function DemoPage() {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/review", {
+      const res = await fetch("https://codeforge-backend-rdxj.onrender.com/review", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
