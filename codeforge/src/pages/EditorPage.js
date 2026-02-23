@@ -11,13 +11,10 @@ function EditorPage() {
 
 useEffect(() => {
   const token = localStorage.getItem("token");
-
   if (!token) {
-    setTimeout(() => {
-      navigate("/login");
-    }, 100);
+    navigate("/login");
   }
-}, []);
+}, [navigate]);
 
     const [code, setCode] = useState(`function greet(name) {
         return "Hello" + name;

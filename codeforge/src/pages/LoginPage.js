@@ -4,10 +4,10 @@ import { useEffect } from "react";
 
 function LoginPage(){
 
-    useEffect(() => {
+   useEffect(() => {
   const token = localStorage.getItem("token");
   if (token) navigate("/editor");
-}, []);
+}, [navigate]);
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
