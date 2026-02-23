@@ -15,7 +15,15 @@ const Review = require("./models/Review");
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "https://codeforge-blond.vercel.app"
+  ],
+  credentials: true
+}));
+
+
 app.use(express.json());
 
 // MongoDB
