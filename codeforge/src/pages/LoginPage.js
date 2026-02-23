@@ -3,6 +3,7 @@ import {useNavigate, Link} from "react-router-dom";
 import { useEffect } from "react";
 
 function LoginPage(){
+    const navigate = useNavigate();
 
    useEffect(() => {
   const token = localStorage.getItem("token");
@@ -11,7 +12,7 @@ function LoginPage(){
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-    const navigate = useNavigate();
+    
 
     const handleLogin = async() => {
 
