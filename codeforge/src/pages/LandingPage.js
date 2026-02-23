@@ -68,11 +68,10 @@ function LandingPage() {
           
             <div className="flex-1 w-full">
               <div className="bg-slate-900 border border-slate-800 rounded-xl p-5 shadow-xl">
-
-                <pre className="text-green-400 text-sm font-mono">
-                 {`function sum(arr) {
-               return arr.reduce((a,b)=> a+b, 0);
-              }`}
+ <pre className="text-green-400 text-sm font-mono">
+   {`function sum(arr) {
+   return arr.reduce((a,b)=> a+b, 0);
+      }`}
                 </pre>
 
                 <div className="mt-4 bg-slate-800 p-3 rounded-lg text-sm text-slate-300">
